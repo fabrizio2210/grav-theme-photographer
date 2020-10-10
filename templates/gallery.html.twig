@@ -43,6 +43,8 @@
 
 $(window).load(function() {  
     var $container = $('#container');
+    //filter based on URL
+    firstFilter();
     //Run to initialise column sizes
     updateSize();
 
@@ -66,6 +68,25 @@ $(window).load(function() {
             updateSize();
             $container.isotope( 'reLayout' );
         });
+
+    function firstFilter() {
+      // Get filter pattern from URL
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      var parm_value = urlParams.get('filter');
+      if (parm_value) {
+        var options = {};
+        options[ 'filter' ] = parm_value;
+        $container.isotope( options );
+        // Restore URL without filter parameter
+        window.history.pushState("object or string", "Title", "/"+window.location.href.substring(window.location.href.lastIndexOf('/') + 1).split("?")[0]);
+        // Update selected link as selected
+        var $optionSet = $('#options .option-set');
+        console.log($optionSet);
+        $optionSet.find('.selected').removeClass('selected');
+        $optionSet.find('[data-option-value~="' + parm_value +'"]').addClass('selected');
+      }
+    }
 
     //Set item size
     function updateSize() {
