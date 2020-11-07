@@ -486,6 +486,42 @@ header {
 .box3 p {
 	color: #ffffff;
 }
+.box5 {
+	background: #5d5d5d;
+}
+.box5 figure {
+	width: 100%;
+}
+.box5 figure img {
+	width: 100%;
+}
+.box5 p {
+	color: #ffffff;
+}
+.box6 {
+	background: #ffffff;
+}
+.box6 figure {
+	width: 100%;
+}
+.box6 figure img {
+	width: 100%;
+}
+.box6 p {
+	color: #5d5d5d;
+}
+.box7 {
+	background: #5d5d5d;
+}
+.box7 figure {
+	width: 100%;
+}
+.box7 figure img {
+	width: 100%;
+}
+.box7 p {
+	color: #ffffff;
+}
 .listbox1 {
 	padding-right: 0;
 }
@@ -494,6 +530,16 @@ header {
 	padding-left: 0;
 }
 .listbox3 {
+	padding-left: 0;
+}
+.listbox5 {
+	padding-right: 0;
+}
+.listbox6 {
+	padding-right: 0;
+	padding-left: 0;
+}
+.listbox7 {
 	padding-left: 0;
 }
 /*---------list3-------------*/
@@ -946,6 +992,7 @@ hr.line2 {
 }
 .description {
 	position: relative;
+	text-align: center;
 	display: block;
 }
 #filters {
