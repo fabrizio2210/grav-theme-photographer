@@ -199,16 +199,15 @@ header {
 }
 /*-------- Logo -------- */
 .navbar-brand_ {
-	float: none;
+	float: left;
 	display: block;
 	position: relative;
-	margin: 0;
 	text-align: center;
 	padding: 0;
-	margin: 68px auto 60px;
+	margin: auto;
 }
 .navbar-brand_ img {
-	max-width: 100%;
+	max-width: 200px;
 }
 .navbar-brand_a:hover {
 	text-decoration: none;
@@ -225,14 +224,14 @@ header {
 	border: none;
 }
 .tm_navbar .nav {
-	float: none;
+	float: right;
 	position: relative;
 	display: inline-block;
 }
 .tm_navbar ul {
 	position: relative;
-	padding: 0;
-	margin: 0;
+	padding: 20px;
+	margin: auto;
 	background: none;
 	list-style: none;
 }
@@ -1666,6 +1665,9 @@ footer {
 }
 .sf-menu {
 	display: none !important;
+}
+.navbar-brand_ {
+	float: none !important;
 }
 .select-menu {
 	display: block !important;
