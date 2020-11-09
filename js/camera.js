@@ -26,7 +26,7 @@
 		loaderPadding		: 2,	//how many empty pixels you want to display between the loader and its background		
 		loaderStroke		: 7,	//the thickness both of the pie loader and of the bar loader. Remember: for the pie, the loader thickness must be less than a half of the pie diameter				
 		minHeight			: '200px',	//you can also leave it blank		
-		navigation			: true,	//true or false, to display or not the navigation buttons		
+		navigation			: false,	//true or false, to display or not the navigation buttons		
 		navigationHover		: false,	//if true the navigation button (prev, next and play/stop buttons) will be visible on hover state only, if false they will be visible always		
 		mobileNavHover		: false,	//same as above, but only for mobile devices		
 		opacityOnGrid		: true,	//true, false. Decide to apply a fade effect to blocks and slices: if your slideshow is fullscreen or simply big, I recommend to set it false to have a smoother effect 		
