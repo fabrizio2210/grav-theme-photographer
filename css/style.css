@@ -28,11 +28,13 @@ body {
 	background: #2f3133;
 }
 .row_2 {
+	color: #ffffff;
 	text-align: center;
 	padding: 22px 0 0;
 	background: #2f3133;
 }
 .row_3 {
+	text-align: center;
 	padding: 43px 0 13px;
 	background: url(../img/pattern2.jpg) 0 0 repeat;
 }

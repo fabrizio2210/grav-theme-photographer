@@ -1,6 +1,7 @@
 <div class="row_2">
     <div class="container">
         <div class="row">
+            <h1>{{ page.header.title|default('Styles') }}</h1>
             <ul class="list1">
                 {% for category in page.header.categories %}
                     <li class="col-lg-4 col-md-4 col-sm-4 listbox{{ loop.index }}">
