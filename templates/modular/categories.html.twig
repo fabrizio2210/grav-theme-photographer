@@ -4,7 +4,7 @@
             <h1>{{ page.header.title|default('Styles') }}</h1>
             <ul class="list1">
                 {% for category in page.header.categories %}
-                    <li class="col-lg-4 col-md-4 col-sm-4 listbox{{ loop.index }}">
+                    <li class="col-lg-4 col-md-4 col-sm-4 listbox{{ category.listclass|default(loop.index) }}">
                         <div class="{{ category.class }}">
                             <a href="{{ category.href|default('#') }}">
                                 {% if category.title_position == 'top' %}
