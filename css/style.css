@@ -203,11 +203,11 @@ header {
 	display: block;
 	position: relative;
 	text-align: center;
-	padding: 15px;
+	padding: 10px;
 	margin: auto;
 }
 .navbar-brand_ img {
-	max-width: 200px;
+	max-width: 150px;
 }
 .navbar-brand_a:hover {
 	text-decoration: none;
@@ -230,7 +230,7 @@ header {
 }
 .tm_navbar ul {
 	position: relative;
-	padding: 20px;
+	padding: 40px;
 	margin: auto;
 	background: none;
 	list-style: none;
