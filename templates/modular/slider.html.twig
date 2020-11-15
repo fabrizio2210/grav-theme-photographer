@@ -1,7 +1,7 @@
 <div class="slider">
     <div class="camera_wrap">
         {% for item in page.media.images %}
-             <div data-src="{{ item.url }}"></div>
+             <div data-src="{{ item.url }}"><a href="{{ item.url }}" style="display:none">just reference</a></div>
         {% endfor %}
         {{ content }}
     </div>
